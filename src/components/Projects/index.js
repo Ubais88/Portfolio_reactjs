@@ -25,17 +25,16 @@ const Projects = ({ openModal, setOpenModal }) => {
         </Desc>
         <ToggleButtonGroup>
           {["All", "Full Stack", "Frontend"].map((item, index, arr) => (
-            <>
+            <React.Fragment key={index}>
               <ToggleButton
-                key={index}
                 value={item}
                 onClick={() => setToggle(item)}
                 active={toggle === item}
               >
                 {item.toUpperCase()}
               </ToggleButton>
-              {index !== arr.length - 1 && <Divider key={index} />}
-            </>
+              {index !== arr.length - 1 && <Divider key={`divider-${index}`} />}
+            </React.Fragment>
           ))}
         </ToggleButtonGroup>
 
