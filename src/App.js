@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Education from "./components/Education";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -31,7 +32,6 @@ const Wrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 
-
 function App() {
 
   const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -47,6 +47,9 @@ function App() {
             <Experience />
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+          </Wrapper>
         </Body>
       </Router>
     </ThemeProvider>
