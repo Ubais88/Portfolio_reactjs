@@ -12,6 +12,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/ProjectDetails";
+import Contact from "./components/Contact";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,7 +36,6 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-
   const [openModal, setOpenModal] = useState({ state: false, project: null });
 
   return (
@@ -51,6 +51,7 @@ function App() {
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
+            <Contact />
           </Wrapper>
           <Footer />
           {openModal.state && (

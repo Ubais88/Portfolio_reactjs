@@ -12,7 +12,7 @@ export const Bio = {
     "An enthusiastic full-stack web developer with a specialization in MERN stack. Motivated, keep to learn, and eager to build new and creative web products as per guidelines. I am looking forward to working as a developer and adding value to the company and stakeholders with my tech skills.",
   github: "https://github.com/Ubais88",
   resume:
-    "https://drive.google.com/file/d/1H2t2bjmWTpnM-3vSvU8kVeWoRfnBvmM4/view?usp=drive_link",
+    "https://drive.google.com/file/d/1FwUxVcgeFbppzY9s3z7osH4FvfcV8D0_/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ubais88/",
   insta: "https://www.instagram.com/i__am__ub/",
 };

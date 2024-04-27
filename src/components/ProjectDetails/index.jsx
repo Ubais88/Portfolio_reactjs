@@ -149,7 +149,7 @@ const index = ({ openModal, setOpenModal }) => {
           />
           <Image src={project?.image} alt="projectImg" />
           <Title>{project?.title}</Title>
-          <Date>{project.date}</Date>
+          <Date>{project?.date}</Date>
           <Tags>
             {project?.tags.map((tag, index) => (
               <Tag key={index}>{tag}</Tag>

@@ -1,24 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Document = styled.img`
-  display: none;
-  height: 70px;
-  width: fit-content;
-  background-color: #000;
-  border-radius: 10px;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`;
-
 const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
-  margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -53,10 +40,6 @@ const Card = styled.div`
     padding: 10px;
     gap: 8px;
     width: 300px;
-  }
-
-  &:hover ${Document} {
-    display: flex;
   }
 
   &:hover ${Span} {
@@ -139,6 +122,28 @@ const Skill = styled.div`
   }
 `;
 
+const Button = styled.a`
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: 13px 16px;
+  margin-top: 2px;
+  border-radius: 12px;
+  border: none;
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 18px;
+  font-weight: 600;
+  background-color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + 99};
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+`;
+
 const ExperienceCard = ({ experience }) => {
   return (
     <Card>
@@ -163,14 +168,13 @@ const ExperienceCard = ({ experience }) => {
                 ))}
               </ItemWrapper>
             </Skills>
-            <button>View Completion Certificate</button>
           </>
         )}
       </Description>
       {experience.doc && (
-        <a href={experience.doc} target="new">
-          <Document src={experience.imgCer} />
-        </a>
+        <Button href={experience?.doc} target="new">
+          View Completion Certificate
+        </Button>
       )}
     </Card>
   );
