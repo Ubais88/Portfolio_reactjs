@@ -19,9 +19,11 @@ import { useTheme } from "styled-components";
 import { useNavigate } from "react-router-dom/dist";
 
 const Navbar = () => {
+  
   const navigate = useNavigate()
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
+
   return (
     <Nav>
       <NavbarContainer>
