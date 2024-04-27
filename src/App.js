@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar";
@@ -7,6 +8,7 @@ import HeroSection from "./components/HeroSection";
 import styled from "styled-components";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -32,6 +34,8 @@ const Wrapper = styled.div`
 
 function App() {
 
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Router>
@@ -42,6 +46,7 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
         </Body>
       </Router>
     </ThemeProvider>
