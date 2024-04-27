@@ -16,11 +16,8 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
-import { useNavigate } from "react-router-dom/dist";
 
 const Navbar = () => {
-  
-  const navigate = useNavigate()
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
 
@@ -29,15 +26,12 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo>
           <span
-            style={{
-              display: "flex",
-              alignItems: "center",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-            onClick={() => navigate('/')}
+            className="navHeader"
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <DiCssdeck size="3rem" />
+            <Span>
+              Portfolio
+            </Span>
           </span>
         </NavLogo>
         <MobileIcon>
