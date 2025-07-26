@@ -126,7 +126,7 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
-    img: "https://yt3.googleusercontent.com/-odqfe8SzjHhj-r2bwtOTEP2SEd_28svcyvA6IlDTTDceB2K5U7V5ufuJwc4ZfgM6XjJ7bsBww=s900-c-k-c0x00ffffff-no-rj",
+    img: "https://ibb.co/bR2KQyFM",
     role: "Full Stack Developer Internship Trainee",
     company: "Cuvette",
     date: "December 2023 - April 2024",
@@ -142,17 +142,38 @@ export const experiences = [
     ],
     doc: "https://drive.google.com/file/d/1T08q_XlnS58aVvnAnrLI96_NdF0Di9i7/view",
   },
+{
+  id: 2,
+  img: "https://ibb.co/CKdw3jS3",
+  role: "Associate Software Developer",
+  company: "Softevia",
+  date: "June 2024 - Present",
+  desc: "Working as a Associate Software Developer focusing on Node.js, PostgreSQL, and TypeScript. Built scalable APIs for survey platforms, integrated multi-tenant authentication, and implemented email integrations using Microsoft Graph and IMAP. Also involved in SDK development and ongoing migration of critical components to Go for performance optimization.",
+  skills: [
+    "Node.js",
+    "PostgreSQL",
+    "TypeScript",
+    "Express.js",
+    "Passport",
+    "OAuth2",
+    "IMAP",
+    "React.js",
+    "Go",
+  ],
+  doc: "",
+}
+
 ];
 
 export const education = [
   {
-    id: 1,
-    img: "https://image3.mouthshut.com/images/imagesp/925718298s.png",
-    school: "Moradabad Institute of Technology, Moradabad, Uttar Pradesh",
-    date: "Oct 2020 - July 2024",
-    grade: "6.9 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Moradabad Institute of Technology, Moradabad, Uttar Pradesh. I have completed 7 semesters and have a CGPA of 6.9. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Dreamers Club (Explorin) at MIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - B.Tech, Computer Science and Engineering",
+    "id": 1,
+    "img": "https://image3.mouthshut.com/images/imagesp/925718298s.png",
+    "school": "Moradabad Institute of Technology, Moradabad, Uttar Pradesh",
+    "date": "Oct 2020 - July 2024",
+    "grade": "7.4 CGPA",
+    "desc": "I have completed my Bachelor's degree in Computer Science and Engineering at Moradabad Institute of Technology, Moradabad. Throughout the 8 semesters, I maintained a CGPA of 7.4. I studied core subjects including Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I was an active member of the Dreamers Club (Explorin), where I collaborated on technical projects and enhanced my development skills.",
+    "degree": "Bachelor of Technology - B.Tech, Computer Science and Engineering"
   },
   {
     id: 2,
