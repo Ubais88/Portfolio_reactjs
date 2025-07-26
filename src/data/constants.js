@@ -11,8 +11,7 @@ export const Bio = {
   description:
     "An enthusiastic full-stack web developer with a specialization in MERN stack. Motivated, keep to learn, and eager to build new and creative web products as per guidelines. I am looking forward to working as a developer and adding value to the company and stakeholders with my tech skills.",
   github: "https://github.com/Ubais88",
-  resume:
-    "https://drive.google.com/file/d/1FwUxVcgeFbppzY9s3z7osH4FvfcV8D0_/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1FwUxVcgeFbppzY9s3z7osH4FvfcV8D0_/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ubais88/",
   insta: "https://www.instagram.com/i__am__ub/",
 };
@@ -125,26 +124,8 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 1,
-    img: "https://ibb.co/bR2KQyFM",
-    role: "Full Stack Developer Internship Trainee",
-    company: "Cuvette",
-    date: "December 2023 - April 2024",
-    desc: "Acquired comprehensive proficiency in MongoDB, Express.js, React, and Node.js (MERN stack) through intensive hands-on training and real-world project assignments, developing a robust understanding of full-stack web development principles.",
-    skills: [
-      "JavaScript",
-      "MongoDb",
-      "ExpressJs",
-      "ReactJs",
-      "NodeJs",
-      "HTML",
-      "CSS",
-    ],
-    doc: "https://drive.google.com/file/d/1T08q_XlnS58aVvnAnrLI96_NdF0Di9i7/view",
-  },
-{
-  id: 2,
-  img: "https://ibb.co/CKdw3jS3",
+  id: 1,
+  img: "https://softevia.com/images/softevia-logo2.png",
   role: "Associate Software Developer",
   company: "Softevia",
   date: "June 2024 - Present",
@@ -161,8 +142,25 @@ export const experiences = [
     "Go",
   ],
   doc: "",
-}
-
+},
+  {
+    id: 2,
+    img: "https://cuvette.tech/app/static/media/logo.06a7ae20.svg",
+    role: "Full Stack Developer Internship Trainee",
+    company: "Cuvette",
+    date: "December 2023 - April 2024",
+    desc: "Acquired comprehensive proficiency in MongoDB, Express.js, React, and Node.js (MERN stack) through intensive hands-on training and real-world project assignments, developing a robust understanding of full-stack web development principles.",
+    skills: [
+      "JavaScript",
+      "MongoDb",
+      "ExpressJs",
+      "ReactJs",
+      "NodeJs",
+      "HTML",
+      "CSS",
+    ],
+    doc: "https://drive.google.com/file/d/1T08q_XlnS58aVvnAnrLI96_NdF0Di9i7/view",
+  },
 ];
 
 export const education = [
